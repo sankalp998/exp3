@@ -1,0 +1,146 @@
+@media only screen
+    and (max-device-width : 480px) {
+        .nav{
+           margin-left:50px;
+            height:150px;
+            
+          
+        }
+        nav li
+        {   width:100px;
+            height:40px;
+           
+            line-height:40px;
+            font-size:20px;
+        }
+        .first img{
+            height:150px;
+            width:150px;
+            float:left;
+            margin-right:40px;
+        }
+        .first h1{
+            font-size:15px;
+        }
+        .first p{
+            font-size:10px;
+        }
+        .card{
+            margin-top:20px;
+            font-size:10px;
+           }
+        .first button {
+          font-size:15px;   
+          border:  2px solid #008CBA;
+          margin-left:60px;
+         
+          }
+        iframe{
+            width:300px;
+            margin-left:5px;
+            height:250px;
+        }
+        .about img{
+            width:90%;
+            height:260px;
+        }
+        .top-center {
+            position: absolute;
+          top: 40%;
+          left: 60%;
+          transform: translate(-50%, -50%);
+          font-size:10px;}
+          .left {
+            position: absolute;
+            top: 160px;
+            left: 0px;
+            font-size:8px;
+          }
+          .third img{
+            height:230px;
+            width:120px;
+            float:right;
+           
+          }
+          .third p{
+            font-size:15px;
+
+          }
+          #slider figure img{
+            width:20%;
+            height:300px;
+            float:left;
+          }
+          .form{
+            font-size:12px;
+           }
+           .form p{
+            margin-top:10px;
+            font-size:10px;
+          }
+        
+    } 
+    @media only screen
+    and (min-device-width: 480px) 
+   and (max-device-width : 1023px) {
+    .nav{
+      margin-left:150px;
+       height:200px;
+     
+   }
+   .first img{
+     
+    height:450px;
+    width:270px;
+    float:left;
+    margin-right:30px;
+}
+.first h1{
+  font-size:40px;
+}
+.card{
+  margin-top:20px;
+  font-size:10px;
+  width:10rem;
+ 
+ }
+ iframe{
+  width:500px;
+  margin-left:5px;
+  height:250px;
+}
+.about img{
+  width:75%;
+  height:300px;
+  margin-right:60px;
+}
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 100px;}
+}
+.top-center {
+  position: absolute;
+  animation: mymove 5s infinite;
+top: 35%;
+left: 60%;
+transform: translate(-50%, -50%);
+font-size:15px;}
+.left {
+  position: absolute;
+  top: 220px;
+  left: 52px;
+  font-size:10px;
+}
+.third img{
+  height:200px;
+  width:250px;
+  float:right;
+ 
+}
+.third p{
+  font-size:15px;
+
+}
+.form{
+  font-size:12px;
+ }}

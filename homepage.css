@@ -1,0 +1,274 @@
+*{
+    margin: 5px;
+    padding: 0px;
+    -webkit-box-sizing:0;
+    box-sizing:0;
+    box-sizing: border-box;
+}
+
+img{
+  object-fit: cover;
+  border-radius:10px;
+}
+button,input,textarea{
+  border-radius:10px !important;
+  outline:none;
+}
+/* navbar */
+nav li
+{   
+	list-style: none;
+    float:right;
+	width:150px;
+	height:60px;
+   
+	line-height:60px;
+	text-align:center;
+	font-size:25px;   
+}
+nav li a
+{
+	text-decoration:none;
+	color:white;
+	display:block;
+  background-color: #004d80;
+  
+}
+
+nav li a:hover 
+{
+	background-color:#333333;
+  color:#99004d;
+ 
+}
+
+.nav{
+    margin-left:450px;
+   height:250px;
+  
+  }
+   @-webkit-keyframes blinker {
+    from {opacity: 1.0;}
+    to {opacity: 0.0;}
+  
+    
+  
+}
+/* first section */
+.first img{
+    height:450px;
+    width:550px;
+    float:left;
+    margin-right:40px;
+}
+.first h1{
+  font-size:40px;
+}
+.first p{
+  font-size:20px;
+}
+
+.card{
+       float:right;
+       margin-right:30px;
+       width: 18rem;
+       box-shadow: 5px 10px #888888;
+   }
+.first button {
+  font-size:25px;
+    background-color: white;  
+  border:  4px solid #008CBA;
+  border-radius:10px;
+ margin-top:20px;
+ 
+  }
+button a{
+    text-decoration: none;
+}
+button:hover {
+    background-color:  #008CBA;
+    color: white;
+  }
+iframe{
+  margin-left:300px;
+}
+/* second section about us */
+
+.about img{
+    width:98%;
+    height:500px;
+   
+}
+
+.about {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size:20px;
+  }
+  .left {
+    position: absolute;
+    top: 280px;
+    left: 26px;
+  }
+  @keyframes mymove {
+    from {left: 0px;}
+    to {left: 700px;}
+  }
+  .top-center {
+    animation: mymove 5s infinite;
+    animation-timing-function: ease;
+    position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size:25px;}
+  .hide {
+    display: none;
+  }
+      
+  .myDIV:hover + .hide {
+    display: block;
+    color: red;
+    
+  }
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+  .shake{
+    animation: shake 1s;
+  animation-iteration-count: infinite;
+  }
+  /* third section */
+  .third img{
+    height:300px;
+    width:650px;
+    float:right;
+    padding:30px;
+   
+  }
+  #contact1 h1{
+    text-align: center;
+  }
+  .raw{
+    text-decoration: blink;
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 0.8s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:ease-in-out;
+    -webkit-animation-direction: alternate;
+  }
+  /* fourth section :carousel */
+  #slider{
+    overflow: hidden;
+  }
+  #slider figure{
+   
+    position: relative;
+    width:500%;
+    margin:0;
+    left:0;
+    animation: 10s slider infinite;
+  }
+  #slider figure img{
+    width:20%;
+    height:500px;
+    float:left;
+  }
+  @keyframes slider{
+    0%{
+      left:0;
+    }
+    20%{
+      left:0;
+    }
+    25%{
+      left:-100%;
+    }
+    45%{
+      left:-100%;
+    }
+    50%{
+      left:-200%;
+    }
+    70%{
+      left:-200%;
+    }
+    75%{
+      left:-300%;
+    }
+    95%{
+      left:-300%;
+    }
+    100%{
+      left:-400%;
+    }
+  }
+  /* fifth section:form */
+  .form{
+     
+    background: #136a8a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #267871, #136a8a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #267871, #136a8a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color:white;
+    font-size:23px;
+    padding:10px;
+    text-align: center;
+   
+}
+textarea{
+    width:40%;
+}
+input{
+    width:30%;
+    text-indent: 10%;
+}
+.form button{
+  padding:2px;
+  width:120px;
+}
+.form p{
+  margin-top:10px;
+  font-size:18px;
+}
+
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #800040 50%, #ff1a66 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
